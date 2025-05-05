@@ -172,3 +172,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+poster/.DS_Store
+.gitignore
+.DS_Store
