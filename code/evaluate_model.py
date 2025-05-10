@@ -17,8 +17,8 @@ from transformers import (
 )
 
 # ----------------------------- 1. Config ----------------------------------- #
-MODEL_DIR  = "bert_sst2_minimal_dataset/checkpoint-1706"     # ← your saved student
-OUT_DIR    = Path("./bert_sst2_minimal_dataset")
+MODEL_DIR  = "bert_wiki/checkpoint-80734"     # ← your saved student
+OUT_DIR    = Path("./bert_wiki")
 MAX_LEN    = 128
 BATCH_SIZE = 32
 SAMPLES    = 5_000                       # cap per‑task examples

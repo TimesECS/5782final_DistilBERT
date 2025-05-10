@@ -26,7 +26,7 @@ STUDENT_MODEL_NAME = "distilbert-base-uncased"
 MAX_LEN    = 128
 OUTPUT_DIR = "./bert_wiki"
 EPOCHS     = 1
-BS_TRAIN   = 32
+BS_TRAIN   = 64
 BS_EVAL    = 64
 LR         = 5e-5
 TEMPERATURE    = 2.0
@@ -202,7 +202,6 @@ def evaluate(trainer,ds):
 
 
 if __name__ == "__main__":
-    # Only run the first time to preprocess and save
     text_extracted_path = Path("./cached/wiki_kept_text")
     tokenized_path = Path("./cached/wiki_tokenized")
     if not tokenized_path.exists():
