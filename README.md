@@ -8,13 +8,10 @@ We aimed to reproduce the performance of DistilBERT on the GLUE benchmark, focus
 
 ## GitHub Contents
 - **code/**: Contains all the scripts for training, fine-tuning, and evaluating the DistilBERT model.
-  - `train.py`: Script for training the model on SST-2.
-  - `finetune.py`: Fine-tuning DistilBERT for specific tasks.
-  - `evaluate_model.py`: Evaluation script for GLUE tasks.
+  - `direct_distil.py`: Directly train DistilBERT on task-specific datasets without pretraining, and then evaluate on the test split of the same dataset.
+  - `finetune.py`: Fine-tuning DistilBERT for specific tasks, and for each fine-tuned model evaluate on all 5 tasks.
   - `model.py`: Implementation of the DistilBERT architecture.
-  - `pretrain.py`: Pretraining script for DistilBERT.
-  - `train_english_wiki.py`: Script for training on English Wikipedia.
-  - `direct_distil.py`: Implements the alternative approach of directly distilling DistilBERT on binary classification datasets without pretraining.
+  - `pretrain.py`: Pretraining script for DistilBERT on English Wikipedia
 - **data/**: Placeholder for datasets.
 - **results/**: Contains results and performance metrics.
 - **poster/**: Project poster summarizing the work.
